@@ -17,7 +17,7 @@ export class AppComponent {
   profileForm=this.fb.group({
     fullname: ['',[Validators.required,Validators.minLength(5),Validators.maxLength(35)]],
     email: ['',[Validators.required,Validators.email]],
-    mobile:['',[Validators.required,Validators.minLength(10)]],
+    mobile:['',[Validators.required,Validators.minLength(10),Validators.maxLength(10)]],
   });
 
   Submitdata(profileForm){
